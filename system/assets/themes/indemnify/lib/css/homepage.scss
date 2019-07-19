@@ -1,0 +1,72 @@
+@import "bootstrap-overrides.scss";
+@import "mixins.scss";
+
+nav{
+  z-index: 5;
+  position: relative;
+}
+.homepage-widget-area{
+  top: -2.6em;
+  z-index: 0;
+  position: relative;
+}
+
+h1.entry-title{display: none;}
+.entry{
+  padding: 0.5em 0;
+}
+.bubble {
+  background: linear-gradient($ltgrey,$medgrey);
+  border-radius: 12px;
+  border: 2px solid $white;
+  h3{
+    color: $white;
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 12px 12px 0 0;
+    padding: 0.25em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .button {
+    border-radius: 12px;
+  }
+  p.last-child{
+    margin-bottom: 0.5em;
+  }
+  &.red-header{
+    h3,.button{
+      background: linear-gradient($red,$dkred);
+    }
+  }
+  &.blue-header{
+    h3,.button{
+      background: linear-gradient($blue,$dkblue);
+    }
+  }
+  &.green-header{
+    h3,.button{
+      background: linear-gradient($green,$dkgreen);
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .bubble{
+    min-height: 23em;
+    h3{
+      min-height: 3em;
+    }
+    .button{
+      position: absolute;
+      width: calc(100% - 30px);
+      bottom: 1em;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+}

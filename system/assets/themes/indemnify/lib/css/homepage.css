@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@media print {
+  a[href]:after {
+    content: "" !important; }
+  div.pre-header, #sticky-wrapper, header.site-header, aside.sidebar {
+    display: none !important; }
+  div.print-header {
+    margin-bottom: 1em; }
+  main.content {
+    width: 100% !important; }
+    main.content p {
+      page-break-inside: avoid; } }
+
+/* Import Fonts
+------------------------------------------------------------ */
+/* Font Stacks */
+/* Colors */
+/* Neutrals */
+/* Default Colors */
+/* Social Colors */
+nav {
+  z-index: 5;
+  position: relative; }
+
+.homepage-widget-area {
+  top: -2.6em;
+  z-index: 0;
+  position: relative; }
+
+h1.entry-title {
+  display: none; }
+
+.entry {
+  padding: 0.5em 0; }
+
+.bubble {
+  background: linear-gradient(#d4d4d4, #999);
+  border-radius: 12px;
+  border: 2px solid #FFF; }
+  .bubble h3 {
+    color: #FFF;
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 12px 12px 0 0;
+    padding: 0.25em;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .bubble .button {
+    border-radius: 12px; }
+  .bubble p.last-child {
+    margin-bottom: 0.5em; }
+  .bubble.red-header h3, .bubble.red-header .button {
+    background: linear-gradient(#ac1017, #4f070b); }
+  .bubble.blue-header h3, .bubble.blue-header .button {
+    background: linear-gradient(#4d84b1, #234e75); }
+  .bubble.green-header h3, .bubble.green-header .button {
+    background: linear-gradient(#317212, #0b1a04); }
+
+@media only screen and (min-width: 768px) {
+  .bubble {
+    min-height: 23em; }
+    .bubble h3 {
+      min-height: 3em; }
+    .bubble .button {
+      position: absolute;
+      width: calc(100% - 30px);
+      bottom: 1em; } }

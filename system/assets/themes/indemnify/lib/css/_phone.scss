@@ -1,0 +1,53 @@
+@media only screen and (max-width: 767px) {
+  .site-header{
+    .container{
+      padding: 0;
+    }
+  }
+
+
+  .nav-primary {
+    .wrap{
+      text-align: left;
+    }
+    .menu {
+      .menu-item{
+        @include customheader(1.2);
+        border-left: 0;
+        border-bottom: 1px solid rgba($ltbeige, 50%);
+        padding: 0;
+        text-align: left;
+        a{
+          border-left: 0;
+          color: $dkbeige;
+          padding: 0 0 0 1em;
+        }
+        &.last-child{
+          border-right: 0;
+          a {
+            border-right: 0;
+          }
+        }
+      }
+      .menu-item{
+        &.logo{
+          display: none;
+        }
+      }
+    }
+  }
+  .content-sidebar-wrap{
+    display: block;
+  }
+  .product-title-image{
+    min-height: 3em;
+  }
+  .product-list{
+    tr{
+      th{
+        font-size: 1em;
+        padding: 0.25em;
+      }
+    }
+  }
+}
