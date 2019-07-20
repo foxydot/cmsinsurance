@@ -193,16 +193,30 @@ function genesis_msdlab_child_comments_gravatar( $args ) {
 
 function msdlab_homepage_sidebar(){
     if(is_front_page()) {
-        print '<div class="homepage-widget-area">';
+        print '<div class="homepage-widget-area container">';
         dynamic_sidebar('homepage');
         print '</div>';
     }
 }
 
+
+function msdlab_homepage_footer_sidebar(){
+    if(is_front_page()) {
+        print '<div class="homepage-footer-widget-area container">';
+        dynamic_sidebar('homepage_ftr');
+        print '</div>';
+    }
+}
+
 function msdlab_add_homepage_sidebar(){
-    genesis_register_sidebar(array(
-        'name' => 'Homepage Header',
-        'description' => 'Widget above content on homepage',
-        'id' => 'homepage'
-    ));
+  genesis_register_sidebar(array(
+      'name' => 'Homepage Header',
+      'description' => 'Widget above content on homepage',
+      'id' => 'homepage'
+  ));
+  genesis_register_sidebar(array(
+      'name' => 'Homepage Footer',
+      'description' => 'Widget below content on homepage',
+      'id' => 'homepage_ftr'
+  ));
 }
