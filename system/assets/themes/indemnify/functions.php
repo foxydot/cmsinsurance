@@ -107,7 +107,7 @@ remove_action('genesis_header','genesis_do_header' );
 add_action('genesis_header','msdlab_do_header' );
 
 
-add_action('genesis_header','msdlab_homepage_sidebar',12);
+add_action('genesis_before_content_sidebar_wrap','msdlab_homepage_sidebar',12);
 add_action('after_setup_theme','msdlab_add_homepage_sidebar', 4);
 /*** NAV ***/
 /**
@@ -202,7 +202,7 @@ function msdlab_homepage_sidebar(){
 function msdlab_add_homepage_sidebar(){
     genesis_register_sidebar(array(
         'name' => 'Homepage Header',
-        'description' => 'Widget above the nav on homepage',
+        'description' => 'Widget above content on homepage',
         'id' => 'homepage'
     ));
 }
