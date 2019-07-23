@@ -193,18 +193,18 @@ function genesis_msdlab_child_comments_gravatar( $args ) {
 
 function msdlab_homepage_sidebar(){
     if(is_front_page()) {
-        print '<div class="homepage-widget-area container">';
+        print '<div class="homepage-widget-area container"><div class="row">';
         dynamic_sidebar('homepage');
-        print '</div>';
+        print '</div></div>';
     }
 }
 
 
 function msdlab_homepage_footer_sidebar(){
     if(is_front_page()) {
-        print '<div class="homepage-footer-widget-area container">';
+        print '<div class="homepage-footer-widget-area container"><div class="row">';
         dynamic_sidebar('homepage_ftr');
-        print '</div>';
+        print '</div></div>';
     }
 }
 
