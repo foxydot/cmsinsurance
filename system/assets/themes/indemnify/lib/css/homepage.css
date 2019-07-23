@@ -36,6 +36,12 @@ nav {
   position: relative;
 }
 
+.homepage-footer-widget-area {
+  background: #FFF;
+  border: 1px solid #d4d4d4;
+  padding: 1em;
+}
+
 h1.entry-title {
   display: none;
 }
