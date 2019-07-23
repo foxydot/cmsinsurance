@@ -108,6 +108,7 @@ add_action('genesis_header','msdlab_do_header' );
 
 
 add_action('genesis_before_content_sidebar_wrap','msdlab_homepage_sidebar',12);
+add_action('genesis_after_content_sidebar_wrap','msdlab_homepage_footer_sidebar',12);
 add_action('after_setup_theme','msdlab_add_homepage_sidebar', 4);
 /*** NAV ***/
 /**
