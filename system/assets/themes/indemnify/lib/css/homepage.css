@@ -39,7 +39,7 @@ nav {
 .homepage-footer-widget-area {
   background: #FFF;
   padding: 1em;
-  margin-top: 2em;
+  margin-top: 2em !important;
 }
 
 h1.entry-title {
@@ -50,8 +50,9 @@ h1.entry-title {
   padding: 0.5em 0;
 }
 
-.slick-initialized .slick-slide .slide__inner {
+.slick-initialized .slick-slide {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  padding: 1em;
 }

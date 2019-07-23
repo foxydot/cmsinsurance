@@ -15,7 +15,7 @@ nav{
 .homepage-footer-widget-area{
   background: $white;
   padding: 1em;
-  margin-top: 2em;
+  margin-top: 2em !important;
 }
 
 h1.entry-title{display: none;}
@@ -25,10 +25,11 @@ h1.entry-title{display: none;}
 
 .slick-initialized{
   .slick-slide{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1em;
     .slide__inner{
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
     }
   }
 }
