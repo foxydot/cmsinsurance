@@ -49,3 +49,9 @@ h1.entry-title {
 .entry {
   padding: 0.5em 0;
 }
+
+.slick-initialized .slick-slide .slide__inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
