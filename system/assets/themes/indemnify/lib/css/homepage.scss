@@ -25,11 +25,10 @@ h1.entry-title{display: none;}
 
 .slick-initialized{
   .slick-slide{
-    display: table-cell;
     vertical-align: middle;
-    text-align: center;
     padding: 1em;
     .slide__inner{
+      text-align: center;
     }
   }
 }

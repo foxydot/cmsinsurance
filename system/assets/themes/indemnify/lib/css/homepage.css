@@ -51,8 +51,10 @@ h1.entry-title {
 }
 
 .slick-initialized .slick-slide {
-  display: table-cell;
   vertical-align: middle;
-  text-align: center;
   padding: 1em;
+}
+
+.slick-initialized .slick-slide .slide__inner {
+  text-align: center;
 }
