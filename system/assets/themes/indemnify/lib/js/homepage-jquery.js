@@ -1,10 +1,10 @@
 jQuery(document).ready(function($) {
     $('.gallery-slider .gallery .gallery-item').removeClass('gallery-item');
     $('.gallery-slider .gallery').slick({
-        autoplay: false,
+        autoplay: true,
         arrows: true,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesPerRow: 5,
         slidesToShow: 5,
         slidesToScroll: 1,
