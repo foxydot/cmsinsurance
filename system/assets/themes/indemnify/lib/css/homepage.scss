@@ -33,6 +33,49 @@ h1.entry-title{display: none;}
   }
 }
 
+.widget_advanced_menu {
+  border: 0px solid #e9e9e6;
+  line-height: 1;
+  padding: 0;
+  .widget-wrap{
+    background-image: linear-gradient(lighten($teal,10%),darken($teal,10%));
+    background-size: 10.00px 3.6em;
+  }
+  .widget-title{
+    padding: 15px;
+    color: $white;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 0;
+    background-image: linear-gradient(135deg, rgba($white,0.3) 5%, rgba($white,0) 5%, rgba($white,0) 50%, rgba($white,0.3) 50%, rgba($white,0.3) 55%, rgba($white,0) 55%, rgba($white,0) 100%);
+    background-size: 10.00px 10.00px;
+  }
+  .menu {
+    background: $teal;
+    padding: 0 15px;
+    li{
+      font-size: 0.9em;
+      margin: 0;
+      text-transform: none;
+      a{
+        padding: 1em;
+        color: $white;
+        border: 0px solid #e9e9e6;
+        &:before{
+          content: "»";
+          margin-right: 1em;
+          height: 1em;
+          display: block;
+          float: left;
+        }
+      }
+    }
+    >li{
+      display: block;
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
 }
 

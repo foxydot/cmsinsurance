@@ -1,21 +1,16 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 @media print {
   a[href]:after {
-    content: "" !important;
-  }
+    content: "" !important; }
   div.pre-header, #sticky-wrapper, header.site-header, aside.sidebar {
-    display: none !important;
-  }
+    display: none !important; }
   div.print-header {
-    margin-bottom: 1em;
-  }
+    margin-bottom: 1em; }
   main.content {
-    width: 100% !important;
-  }
-  main.content p {
-    page-break-inside: avoid;
-  }
-}
+    width: 100% !important; }
+    main.content p {
+      page-break-inside: avoid; } }
 
 /* Import Fonts
 ------------------------------------------------------------ */
@@ -26,35 +21,62 @@
 /* Social Colors */
 nav {
   z-index: 5;
-  position: relative;
-}
+  position: relative; }
 
 .homepage-widget-area {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1em;
-  position: relative;
-}
+  position: relative; }
 
 .homepage-footer-widget-area {
   background: #FFF;
   padding: 1em;
-  margin-top: 2em !important;
-}
+  margin-top: 2em !important; }
 
 h1.entry-title {
-  display: none;
-}
+  display: none; }
 
 .entry {
-  padding: 0.5em 0;
-}
+  padding: 0.5em 0; }
 
 .slick-initialized .slick-slide {
   vertical-align: middle;
-  padding: 1em;
-}
+  padding: 1em; }
+  .slick-initialized .slick-slide .slide__inner {
+    text-align: center; }
 
-.slick-initialized .slick-slide .slide__inner {
-  text-align: center;
-}
+.widget_advanced_menu {
+  border: 0px solid #e9e9e6;
+  line-height: 1;
+  padding: 0; }
+  .widget_advanced_menu .widget-wrap {
+    background-image: linear-gradient(#34b1d1, #1e6d81);
+    background-size: 10.00px 3.6em; }
+  .widget_advanced_menu .widget-title {
+    padding: 15px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 0;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 5%, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
+    background-size: 10.00px 10.00px; }
+  .widget_advanced_menu .menu {
+    background: #2790ab;
+    padding: 0 15px; }
+    .widget_advanced_menu .menu li {
+      font-size: 0.9em;
+      margin: 0;
+      text-transform: none; }
+      .widget_advanced_menu .menu li a {
+        padding: 1em;
+        color: #FFF;
+        border: 0px solid #e9e9e6; }
+        .widget_advanced_menu .menu li a:before {
+          content: "»";
+          margin-right: 1em;
+          height: 1em;
+          display: block;
+          float: left; }
+    .widget_advanced_menu .menu > li {
+      display: block; }

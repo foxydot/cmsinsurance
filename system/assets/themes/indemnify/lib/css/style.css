@@ -1805,6 +1805,9 @@ p.entry-meta {
   .sidebar-sidebar-content .sidebar-primary {
     float: left;
     order: 1; }
+  .content-sidebar .sidebar-primary {
+    float: right;
+    order: 2; }
   /* ### Secondary Sidebar */
   .sidebar-secondary {
     float: left; }
