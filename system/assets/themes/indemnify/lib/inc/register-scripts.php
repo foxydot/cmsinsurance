@@ -19,6 +19,8 @@ function msdlab_add_styles() {
         wp_enqueue_style('msd-style',get_stylesheet_directory_uri().'/lib/css/style.css?v=20181012',$queue);
         $queue[] = 'msd-style';
         if(is_front_page()){
+            wp_enqueue_style('slick-css',get_stylesheet_directory_uri().'/lib/slick/slick.css',$queue);
+            wp_enqueue_style('slick-theme-css',get_stylesheet_directory_uri().'/lib/slick/slick-theme.css',$queue);
             wp_enqueue_style('msd-homepage-style',get_stylesheet_directory_uri().'/lib/css/homepage.css?v=20181012',$queue);
             $queue[] = 'msd-homepage-style';
         }
@@ -54,6 +56,7 @@ function msdlab_add_scripts() {
         if($is_IE){
         }
         if(is_front_page()){
+            wp_enqueue_script('slick-js',get_stylesheet_directory_uri().'/lib/slick/slick.min.js',array('jquery'));
             wp_enqueue_script('msd-homepage-jquery',get_stylesheet_directory_uri().'/lib/js/homepage-jquery.js',array('jquery','bootstrap-jquery'));
         }
     }
