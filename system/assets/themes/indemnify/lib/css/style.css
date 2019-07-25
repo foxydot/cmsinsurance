@@ -1066,7 +1066,7 @@ img.alignright,
   .sub-menu-toggle {
     border-width: 0;
     background-color: #FFF;
-    color: #7F7049;
+    color: #4d84b1;
     display: block;
     margin: 0 auto;
     overflow: hidden;
@@ -1077,7 +1077,7 @@ img.alignright,
   .sub-menu-toggle:focus,
   .sub-menu-toggle:hover {
     background: #FFF;
-    color: #7F7049;
+    color: #4d84b1;
     border-width: 0; }
   .menu-toggle {
     line-height: 20px;
@@ -1724,17 +1724,23 @@ p.entry-meta {
     font-weight: 700;
     font-size: 1.2em;
     border-left: 0;
-    border-bottom: 1px solid #ebdab3;
+    border-bottom: 1px solid white;
     padding: 0;
     text-align: left; }
     .nav-primary .menu .menu-item a {
       border-left: 0;
-      color: #7F7049;
+      color: #FFF;
       padding: 0 0 0 1em; }
     .nav-primary .menu .menu-item.last-child {
       border-right: 0; }
       .nav-primary .menu .menu-item.last-child a {
         border-right: 0; }
+  .nav-primary .menu .menu-item.search {
+    position: relative;
+    border-left: 0; }
+    .nav-primary .menu .menu-item.search .search-form {
+      margin-top: 0.25em;
+      margin-bottom: 0.25em; }
   .nav-primary .menu .menu-item.logo {
     display: none; }
   .content-sidebar-wrap {
