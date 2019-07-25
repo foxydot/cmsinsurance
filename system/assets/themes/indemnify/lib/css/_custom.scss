@@ -5,3 +5,38 @@
 .header-image{
   border-bottom: 6px solid $dkblue;
 }
+
+
+.image-button{
+  padding: 0 0.25em;
+  .bkg {
+    min-height: 17em;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    h4 {
+      position: absolute;
+      margin: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $dkgrey;
+      color: $white;
+      padding: 0.5em;
+      .button {
+        font-size: 0.7em;
+        padding: 0.25em 0.5em;
+        float: right;
+        margin: 0.5em 0;
+        border-radius: 0.25em;
+      }
+    }
+    a.cover{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

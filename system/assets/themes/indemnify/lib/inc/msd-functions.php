@@ -236,3 +236,20 @@ function bourncreative_remove_page_templates( $templates ) {
     unset( $templates['page_archive.php'] );
     return $templates;
 }
+
+add_shortcode('image-button','msdlab_image_button_sc_handler');
+
+function msdlab_image_button_sc_handler($atts){
+    extract( shortcode_atts( array(
+        'url' => null,
+        'target' => '_self',
+        'title' => null,
+        'bkg' => null,
+        'class' => null,
+    ), $atts ) );
+    $ret[] = '<div class="image-button '.$class.'"><div class="bkg" style="background-image:url('.$bkg.')">';
+    $ret[] = '<h4><span class="button">Learn More</span>'.$title.'</h4>';
+    $ret[] = '<a class="cover" href="' . $url . '" target="' . $target . '"></a>';
+    $ret[] = '</div></div>';
+    return implode("\n",$ret);
+}
