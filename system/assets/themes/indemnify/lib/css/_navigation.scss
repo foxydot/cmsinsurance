@@ -247,11 +247,6 @@
         padding: 0.5em 1em;
         border-left: 1px #2ca1ba solid;
       }
-      &.last-child{
-        a {
-          border-right: 1px #2ca1ba solid;
-        }
-      }
       &:hover{
         background: linear-gradient($dkblue,rgb(36, 88, 144));
       }
@@ -275,52 +270,47 @@
       }
     }
   }
-  li.right.search{
-    display: block;
+  li.menu-item.search{
+    border-left: 1px #2ca1ba solid;
+    bottom: 0;
     position: absolute;
-    right: -2em;
-    top:-0.5em;
+    &:hover{
+      background: transparent;
+      position: absolute;
+    }
     .search-form{
-      top: 0.5em;
+      position: relative;
       display: inline-block;
-      margin:0;
+      margin-left: 1em;
+      margin-bottom: 0.5em;
       background: $white;
-      &:before{
-        @include fontawesome;
-        content: '\f002';
-        position: relative;
-        left: 1em;
-        color: $blue;
-      }
+      border-radius: 0.5em;
       input[type="search"]{
         transition-property: width;
         transition-duration: 1s;
         transition-timing-function: ease-in;
-        width: 0em;
+        width: 10em;
         position: relative;
-        font-size: 1.4rem;
+        font-size: 1em;
         background: none;
         border: 0;
-        padding: 0.5em 0em 0.5em 1.5em;
-        &:focus{
-          width: 25em;
-          z-index: 999;
-          border-bottom: 1px solid $ltgrey;
-        }
+        padding: 0.25em 0em 0.25em 1em;
       }
       input[type="submit"]{
+        position: absolute;
+        display: block;
+        margin: 0;
+        padding: 0;
         @include fontawesome;
         background: transparent;
         border: 0 none;
         clip: auto;
         color: $link;
-        display: none;
-        font-size: 1.2rem;
-        height: 18px;
+        font-size: 1.2em;
         line-height: 1;
         text-align: center;
-        width: 18px;
-        top: 0.9rem;
+        top: 0.25em;
+        right: 0.25em;
       }
     }
   }
@@ -372,7 +362,7 @@
       }
     }
   }
-  li.right.search{
+  li.search{
     display: block;
     position: absolute;
     right: -2em;
